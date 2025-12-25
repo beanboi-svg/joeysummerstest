@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Familjen Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle at top, #66ccff 0%, #66ccff 50%, #ffcc33 100%);
+  padding: 50px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 38px;
+  font-variation-settings: 'wght' 300;
+  transition: font-variation-settings 0.5s ease;
+}
+
+.nav-item.selected {
+  font-variation-settings: 'wght' 600;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .hero {
+      padding: 30px;
+    }
+    .nav-item {
+        font-size: 20px;
+        line-height: 25px;
+    }
+} 
