@@ -35,12 +35,12 @@ body {
   text-decoration: none;
   font-size: 30px;
   line-height: 38px;
-  font-variation-settings: 'wght' 300;
+  font-weight: 400;
   transition: font-variation-settings 0.5s ease;
 }
 
 .nav-item.selected {
-  font-variation-settings: 'wght' 600;
+  font-weight: 400;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
